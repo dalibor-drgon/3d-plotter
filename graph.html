@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="plotly-1.52.3.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="chart"></div>
+        <script src="Notifier.js"></script>
+        <script src="common.js"></script>
+        <script>
+            var urlVars = {};
+            getUrlVars(urlVars);
+            plotOnUpdate('chart', urlVars); 
+        </script>
+    </div>
+</body>
+</html>
