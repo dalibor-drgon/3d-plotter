@@ -184,7 +184,7 @@ function chart_update() {
 
 //Recaclulate values
 	document.getElementById("url2").href = document.getElementById("url").value = window.location.href.split("#")[0] + "#" +$(form).serialize();
-	document.getElementById("url2_graph").href = document.getElementById("url_graph").value = window.location.href.split("#")[0].replace('index.html', 'graph.html') + "#" +$(form).serialize();
+	document.getElementById("url2_graph").href = document.getElementById("url_graph").value = (window.location.href.split("#")[0].replace('index.html', 'graph.html') + "#" +$(form).serialize()).replace('/#', '/graph.html#');
 
     // Perform calculation here
     plotOnUpdate('graph', form.elements)
